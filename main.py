@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return "Welcome to the flask coding."
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return "Register employee here"
+
 
 
 if __name__ == "__main__":
