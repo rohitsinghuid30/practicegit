@@ -1,5 +1,6 @@
 # This is our main app
 from flask import Flask
+from app import Name
 
 app = Flask(__name__)
 
@@ -16,6 +17,10 @@ def sum(a, b):
 
 def substract(a,b):
     return a-b
+
+
+myname = Name("Rohit Singh")
+print(myname)
 
 if __name__ == "__main__":
     app.run(debug=True)
