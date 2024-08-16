@@ -11,7 +11,8 @@ def home():
 def register():
     return "Register employee here"
 
-
+def sum(a, b):
+    return a+b
 
 if __name__ == "__main__":
     app.run(debug=True)
